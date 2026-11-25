@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Rewear Esthétique: buy and sell pre-loved fashion. Wear better, waste less.">
+<title>Rewear Esthétique – Thrift it. Flex it. Repeat.</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F2EB;--card:#FFFFFF;--ink:#22201C;--mut:#6B655C;--lime:#A9B896;--lil:#E9E3D7;--pink:#E9E3D7;--line:#E4DDD1;--acc:#5F7352;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Fraunces',serif;margin:0}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.w{width:min(1200px,100% - 40px);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#F6F2EBee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces';font-weight:600;font-size:20px}
+.mark{width:40px;height:40px;border-radius:12px;background:var(--lime);color:#22201C;display:grid;place-items:center;transform:rotate(-6deg)}
+.links{display:flex;gap:26px;font-weight:500;font-size:15px}.links a:hover{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border:2px solid var(--lime);background:var(--lime);color:#22201C;font-weight:700;font-size:16px;padding:0 22px;border-radius:14px;cursor:pointer;box-shadow:none;transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);box-shadow:none}
+.btn.sm{min-height:44px;padding:0 16px;font-size:14px;box-shadow:none}
+.hero{padding:88px 0 96px;text-align:center}.hero p{margin:0 auto 28px}.row{justify-content:center}
+.tag{display:inline-block;background:var(--lil);color:#22201C;font-weight:700;font-size:13px;letter-spacing:.08em;padding:8px 14px;border-radius:999px}
+h1{font-weight:600;font-size:clamp(52px,9vw,108px);line-height:.92;letter-spacing:-.02em;margin:22px 0}
+h1 span{color:var(--acc)}
+.hero p{font-size:19px;line-height:1.55;color:var(--mut);max-width:470px;margin:0 0 28px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.art{position:relative;min-height:520px}
+.t{position:absolute;border-radius:24px;overflow:hidden;display:flex;align-items:flex-end;padding:14px;font-weight:700;color:#22201C;transition:transform .2s}
+.t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t span{position:relative;background:#F4F1E8;border-radius:999px;padding:6px 12px;font-size:13px}
+.t1{left:2%;top:4%;width:46%;height:300px;background:linear-gradient(160deg,#C5D1B3,#9FB08C);transform:rotate(-6deg)}
+.t2{right:2%;top:20%;width:46%;height:320px;background:linear-gradient(160deg,#E6E0D4,#D3CBBB);transform:rotate(5deg)}
+.t3{left:18%;bottom:0;width:44%;height:210px;background:linear-gradient(160deg,#D9D3C6,#C2BAA9);transform:rotate(-2deg)}
+.t:hover{transform:rotate(0) scale(1.03)}
+.stk{position:absolute;right:6%;top:-4px;width:104px;height:104px;border-radius:50%;background:#22201C;color:#F6F2EB;display:grid;place-items:center;text-align:center;font-family:'Fraunces';font-weight:600;font-size:21px;line-height:1;transform:rotate(12deg);z-index:2}
+.mq{background:var(--lime);color:#22201C;overflow:hidden;padding:14px 0;transform:rotate(-1deg);margin:0 -20px}
+.mq div{display:flex;width:max-content;animation:m 24s linear infinite;font-family:'Fraunces';font-weight:600;font-size:28px;white-space:nowrap}
+.mq b{padding-right:40px;font-weight:600}
+@keyframes m{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq div{animation:none}}
+section{padding:72px 0}
+.eb{color:var(--acc);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h2{font-weight:600;font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.02em;margin:10px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.head p{color:var(--mut);margin:0}
+.bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.bar input{flex:1;min-width:220px;min-height:48px;padding:0 16px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
+.fl{display:flex;gap:8px;flex-wrap:wrap}
+.f{min-height:44px;padding:0 16px;border-radius:999px;border:2px solid var(--line);background:transparent;color:var(--ink);font-weight:700;font-size:14px;cursor:pointer}
+.f.on,.f:hover{background:#22201C;border-color:#22201C;color:#F6F2EB}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.p{background:var(--card);border-radius:22px;overflow:hidden;border:2px solid var(--line);transition:transform .2s,border-color .2s}
+.p:hover{transform:translateY(-5px) rotate(-1deg);border-color:var(--lime)}
+.ph{height:200px;position:relative;display:grid;place-items:center;overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph i{font:600 44px 'Fraunces';color:#22201C26;font-style:normal;text-transform:uppercase;letter-spacing:-.03em}
+.cd{position:absolute;left:10px;top:10px;background:#22201C;color:#F6F2EB;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.hr{position:absolute;right:8px;top:8px;width:44px;height:44px;border-radius:50%;border:0;background:#F4F1E8;color:#22201C;font-size:20px;cursor:pointer}
+.pi{padding:14px 16px 16px}
+.pi h3{font-size:18px;margin-bottom:4px}
+.m{font-size:13px;color:var(--mut)}
+.pr{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:8px}
+.pr b{font:600 24px 'Fraunces';color:var(--acc)}
+.sl{font-size:12px;color:var(--mut);margin-top:10px}
+.emp{grid-column:1/-1;text-align:center;padding:48px;border:2px dashed var(--line);border-radius:22px;color:var(--mut)}
+.sell{background:var(--lil);color:#22201C}
+.sell .eb{color:#22201C}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:start}
+.sell h2{font-size:clamp(40px,6vw,72px)}
+.sell p{font-size:18px;line-height:1.55}
+.sell ul{list-style:none;padding:0;margin:24px 0;display:grid;gap:12px;font-weight:700}
+.sell li:before{content:'';display:inline-block;width:14px;height:14px;border-radius:4px;background:#22201C;margin-right:12px;transform:rotate(45deg)}
+.fc{background:#F4F1E8;border-radius:24px;padding:28px;box-shadow:0 16px 48px #22201C14}
+.fc h3{font-size:28px}.fc>p{font-size:14px;color:#3D443E;margin:6px 0 20px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fd{display:flex;flex-direction:column;gap:6px}.fd.full{grid-column:1/-1}
+.fd label{font-size:13px;font-weight:700}
+.fd input,.fd select,.fd textarea{min-height:46px;padding:10px 12px;border-radius:12px;border:2px solid #22201C;background:#fff;color:#22201C;width:100%}
+.fd textarea{min-height:80px;resize:vertical}
+.fc .btn{width:100%;margin-top:18px;background:#22201C;color:#F6F2EB;border-color:#22201C;box-shadow:none}
+.hint{font-size:12px;color:#3D443E;margin-top:12px}
+.hw{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.hc{background:var(--card);border-radius:22px;padding:26px;border:2px solid var(--line)}
+.hc b{font:600 54px 'Fraunces'}.hc b{color:#5F7352}
+.hc h3{font-size:24px;margin:8px 0}.hc p{margin:0;color:var(--mut);line-height:1.6}
+footer{border-top:1px solid var(--line);padding:32px 0}
+.ft{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;color:var(--mut);font-size:14px}
+.mb{position:fixed;inset:0;background:#22201Ccc;z-index:30;display:none;place-items:center;padding:20px}
+.mb.on{display:grid}
+.md{background:#F4F1E8;color:#22201C;border-radius:24px;padding:28px;max-width:440px;width:100%;position:relative;box-shadow:0 16px 48px #22201C22}
+.md h3{font-size:28px;margin-right:40px}.md p{line-height:1.6;color:#3D443E}
+.x{position:absolute;right:14px;top:14px;width:44px;height:44px;border-radius:50%;border:0;background:#22201C;color:#F4F1E8;font-size:20px;cursor:pointer}
+.ts{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--lime);color:#22201C;font-weight:700;padding:14px 22px;border-radius:14px;opacity:0;pointer-events:none;transition:.25s;z-index:40}
+.ts.on{opacity:1;transform:translate(-50%,0)}
+.mn{width:46px;height:46px;border-radius:50%;border:2px solid var(--ink);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.mn:hover{background:var(--ink);color:var(--bg)}
+.db{position:fixed;inset:0;background:#22201C66;z-index:20;opacity:0;pointer-events:none;transition:opacity .25s}
+.db.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(340px,86vw);background:var(--bg);z-index:25;padding:88px 32px 32px;display:flex;flex-direction:column;gap:32px;transform:translateX(100%);visibility:hidden;transition:transform .3s,visibility .3s;border-left:1px solid var(--line);box-shadow:-16px 0 48px #22201C14}
+.dr.on{transform:none;visibility:visible}
+.dr nav{display:flex;flex-direction:column;gap:6px}
+.dr nav a{font:600 34px 'Fraunces',serif;padding:8px 0;border-bottom:1px solid var(--line)}
+.dr nav a:hover{color:var(--acc)}
+.dr .x{top:20px;right:20px}
+.sd{width:min(460px,100vw);padding:0;overflow:hidden}.sdi{height:100%;overflow-y:auto;padding:76px 28px 32px}.sd .fc{background:none;box-shadow:none;padding:0}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.wc{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:28px}
+.wc h3{font-size:28px;color:var(--acc);margin-bottom:8px}.wc p{margin:0;color:var(--mut);line-height:1.6}
+.cta{background:#22201C;color:#F6F2EB;border-radius:28px;padding:56px 28px;text-align:center}
+.cta h2{margin:0 0 12px}.cta p{color:#CFCABF;margin:0 auto 26px;max-width:460px;line-height:1.6}
+.fl2{display:flex;gap:22px;flex-wrap:wrap}.fl2 a:hover{color:var(--acc)}
+@media(max-width:700px){.links{display:none}.fg{grid-template-columns:1fr}.fd.full{grid-column:auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ph{height:160px}.pi h3{font-size:15px}.pr b{font-size:20px}.art{min-height:440px}.fc{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a class="brand" href="#"><span class="mark">RE</span>Rewear Esthétique</a>
+<button class="mn" id="mn" aria-label="Open menu" aria-expanded="false" aria-controls="dr"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 7h16M3 15h16"/></svg></button>
+</div></header>
+<div class="db" id="db"></div>
+<aside class="dr" id="dr" aria-label="Menu" aria-hidden="true"><button class="x" id="dx" aria-label="Close menu">&times;</button>
+<nav><a href="#browse">Shop</a><a href="#sell" data-s>Sell</a></nav>
+<a class="btn" href="#sell" data-s>+ Sell an item</a></aside>
+<aside class="dr sd" id="sd" aria-label="List an item" aria-hidden="true"><button class="x" id="sx" aria-label="Close">&times;</button><div class="sdi"><div class="fc"><h3>List an item</h3><p>A few details so buyers know what they’re getting.</p>
+<form id="lf"><div class="fg">
+<div class="fd full"><label for="n">Item name *</label><input id="n" required placeholder="e.g. Blue denim jacket"></div>
+<div class="fd"><label for="c">Category *</label><select id="c" required><option value="">Choose</option><option>Tops</option><option>Bottoms</option><option>Dresses</option><option>Outerwear</option><option>Shoes</option><option>Accessories</option></select></div>
+<div class="fd"><label for="s">Size *</label><select id="s" required><option value="">Choose</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>Free size</option><option>UK 5</option><option>UK 6</option><option>UK 7</option><option>UK 8</option><option>Other</option></select></div>
+<div class="fd"><label for="k">Condition *</label><select id="k" required><option value="">Choose</option><option>Like new</option><option>Excellent</option><option>Good</option><option>Fair</option></select></div>
+<div class="fd"><label for="p">Price (₹) *</label><input id="p" type="number" min="1" required placeholder="499"></div>
+<div class="fd full"><label for="u">Photo URL (optional)</label><input id="u" type="url" placeholder="Paste a public image link"></div>
+<div class="fd full"><label for="d">Description</label><textarea id="d" placeholder="Colour, brand, fit, any flaws…"></textarea></div>
+<div class="fd"><label for="sn">Your name *</label><input id="sn" required></div>
+<div class="fd"><label for="se">Contact email *</label><input id="se" type="email" required placeholder="you@example.com"></div>
+</div><button class="btn" type="submit">Publish my listing &#8599;</button>
+<div class="hint">Demo: listings are saved in this browser only.</div></form></div></div></aside>
+<main>
+<div class="w hero">
+<div>
+<span class="tag">PRE-LOVED. RE-LOVED. REWORN.</span>
+<h1>Thrift it.<br><span>Flex it.</span><br>Repeat.</h1>
+<p>Streetwear, vintage and y2k finds from real people. Cheaper than fast fashion, cooler than the mall, zero guilt.</p>
+<div class="row"><a class="btn" href="#browse">Shop the drop &#8599;</a><a class="btn ghost" href="#sell" data-s>Sell your closet</a></div>
+</div>
+</div>
+<div class="mq" aria-hidden="true"><div>
+<b>PRE-LOVED &#10033; BUDGET FRIENDLY &#10033; PLANET KIND &#10033; STYLE DESERVES A SECOND LIFE &#10033; PRE-LOVED &#10033; BUDGET FRIENDLY &#10033; PLANET KIND &#10033;</b>
+<b>PRE-LOVED &#10033; BUDGET FRIENDLY &#10033; PLANET KIND &#10033; STYLE DESERVES A SECOND LIFE &#10033; PRE-LOVED &#10033; BUDGET FRIENDLY &#10033; PLANET KIND &#10033;</b>
+</div></div>
+
+<section id="browse"><div class="w">
+<div class="head"><div><div class="eb">Fresh drops</div><h2>Find your next fave.</h2><p>Pieces listed by our community, updated all the time.</p></div></div>
+<div class="bar"><input id="q" type="search" aria-label="Search items" placeholder="Search jeans, jackets, dresses…"><div class="fl" id="fl"></div></div>
+<div class="grid" id="g"></div>
+</div></section>
+<section id="why"><div class="w">
+<div class="head"><div><div class="eb">Why Rewear</div><h2>Good for you. Good for the planet.</h2></div></div>
+<div class="why">
+<div class="wc"><h3>Pre-loved</h3><p>Unique pieces with stories you won’t find on a rack.</p></div>
+<div class="wc"><h3>Budget friendly</h3><p>Style for less, so you can switch up your look more often.</p></div>
+<div class="wc"><h3>Planet kind</h3><p>Every piece that stays in use is one less in landfill.</p></div>
+</div></div></section>
+<section style="padding-top:0"><div class="w"><div class="cta"><div class="eb" style="color:#A9B896">Your closet, reimagined</div><h2>Got clothes to pass on?</h2><p>List a piece in a minute. You set the price, buyers get in touch directly.</p><a class="btn" href="#sell" data-s>List your clothes &#8599;</a></div></div></section>
+</main>
+<footer><div class="w ft"><div><a class="brand" href="#"><span class="mark">RE</span>Rewear Esthétique</a><p style="margin:12px 0 0">Wear better. Waste less. © 2026</p></div><nav class="fl2" aria-label="Footer"><a href="#browse">Shop</a><a href="#why">Why Rewear</a><a href="#sell" data-s>Sell an item</a><a href="#">Back to top</a></nav></div></footer>
+<div class="mb" id="mb"><div class="md" role="dialog" aria-modal="true" aria-labelledby="mt"><button class="x" aria-label="Close" onclick="cm()">&times;</button><h3 id="mt"></h3><p id="mx"></p><a class="btn" id="cs" href="#">Contact seller</a></div></div>
+<div class="ts" id="ts" role="status"></div>
+<script>
+const S=[
+{name:'Classic denim jacket',photo:'https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=700&q=80',category:'Outerwear',size:'M',condition:'Excellent',price:799,seller:'Aarav',contact:'hello@example.com',description:'A timeless denim layer in excellent condition.'},
+{name:'Everyday white shirt',photo:'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80',category:'Tops',size:'S',condition:'Like new',price:349,seller:'Mira',contact:'hello@example.com',description:'Crisp white shirt, easy to style.'},
+{name:'Relaxed fit trousers',photo:'https://images.unsplash.com/photo-1506532181285-7d7e7f5e3d4d?auto=format&fit=crop&w=700&q=80',category:'Bottoms',size:'L',condition:'Good',price:499,seller:'Kabir',contact:'hello@example.com',description:'Comfortable relaxed-fit trousers.'},
+{name:'Floral summer dress',photo:'https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=700&q=80',category:'Dresses',size:'M',condition:'Excellent',price:650,seller:'Anaya',contact:'hello@example.com',description:'Lightweight floral dress for sunny days.'},
+{name:'Canvas everyday sneakers',photo:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80',category:'Shoes',size:'UK 7',condition:'Good',price:599,seller:'Riya',contact:'hello@example.com',description:'Clean and comfortable sneakers.'},
+{name:'Minimal shoulder bag',photo:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80',category:'Accessories',size:'Free size',condition:'Like new',price:450,seller:'Dev',contact:'hello@example.com',description:'Minimal bag with room for essentials.'},
+{name:'Soft knit sweater',photo:'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80',category:'Tops',size:'L',condition:'Good',price:550,seller:'Ishita',contact:'hello@example.com',description:'Soft knit, gently worn.'},
+{name:'Straight fit blue jeans',photo:'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80',category:'Bottoms',size:'M',condition:'Excellent',price:699,seller:'Arjun',contact:'hello@example.com',description:'Classic straight-fit jeans.'}];
+const CATS=['All','Tops','Bottoms','Dresses','Outerwear','Shoes','Accessories'];
+const COL={Tops:'#C5D1B3',Bottoms:'#DDD6C8',Dresses:'#E6E0D4',Outerwear:'#CFC8BA',Shoes:'#D8D2C6',Accessories:'#E2DCCF'};
+let act='All',cur=[],saved=[];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function mine(){try{return JSON.parse(localStorage.getItem('esthetiqueListings')||'[]')}catch(e){return[]}}
+function bf(){$('fl').innerHTML=CATS.map(c=>`<button class="f${c===act?' on':''}" data-c="${c}">${c}</button>`).join('')}
+function render(){
+const q=$('q').value.toLowerCase();
+cur=[...mine(),...S].filter(x=>(act==='All'||x.category===act)&&`${x.name} ${x.category} ${x.size} ${x.description||''}`.toLowerCase().includes(q));
+$('g').innerHTML=cur.length?cur.map((x,i)=>`<article class="p"><div class="ph" style="background:${COL[x.category]||'#C6FF3D'}"><i>${esc(x.category)}</i>${x.photo?`<img src="${esc(x.photo)}" alt="${esc(x.name)}" onerror="this.remove()">`:''}<span class="cd">${esc(x.condition)}</span><button class="hr" aria-label="Save item" data-h="${i}">&#9825;</button></div><div class="pi"><h3>${esc(x.name)}</h3><div class="m">${esc(x.category)} · Size ${esc(x.size)}</div><div class="pr"><b>₹${Number(x.price).toLocaleString('en-IN')}</b><button class="btn sm" data-v="${i}">View</button></div><div class="sl">Listed by ${esc(x.seller)}</div></div></article>`).join(''):'<div class="emp">Nothing here yet. Try another search or category.</div>'}
+$('fl').addEventListener('click',e=>{const c=e.target.dataset.c;if(!c)return;act=c;bf();render()});
+$('q').addEventListener('input',render);
+$('g').addEventListener('click',e=>{
+const h=e.target.closest('[data-h]');if(h){h.innerHTML=h.innerHTML==='♡'?'♥':'♡';return}
+const v=e.target.closest('[data-v]');if(!v)return;const x=cur[+v.dataset.v];
+$('mt').textContent=x.name;$('mx').textContent=`₹${Number(x.price).toLocaleString('en-IN')} · ${x.condition} · Size ${x.size}. ${x.description||''} Seller: ${x.seller}.`;
+$('cs').href=`mailto:${encodeURIComponent(x.contact)}?subject=${encodeURIComponent('Interested in '+x.name)}&body=${encodeURIComponent('Hi '+x.seller+', is '+x.name+' still available?')}`;
+$('mb').classList.add('on')});
+function cm(){$('mb').classList.remove('on')}
+$('mb').addEventListener('click',e=>{if(e.target.id==='mb')cm()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')cm()});
+$('lf').addEventListener('submit',e=>{e.preventDefault();
+const it={name:$('n').value.trim(),category:$('c').value,size:$('s').value,condition:$('k').value,price:Number($('p').value),photo:$('u').value.trim(),description:$('d').value.trim(),seller:$('sn').value.trim(),contact:$('se').value.trim()};
+const a=mine();a.unshift(it);try{localStorage.setItem('esthetiqueListings',JSON.stringify(a))}catch(x){S.unshift(it)}
+e.target.reset();ca();act='All';$('q').value='';bf();render();$('browse').scrollIntoView({behavior:'smooth'});
+const t=$('ts');t.textContent='Your item is live!';t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2600)});
+const dr=$('dr'),sd=$('sd'),db=$('db'),mn=$('mn');
+function tg(el,o,f){el.classList.toggle('on',o);el.setAttribute('aria-hidden',!o);db.classList.toggle('on',o);if(el===dr)mn.setAttribute('aria-expanded',o);if(o)(f||el.querySelector('.x')).focus()}
+function ca(){if(dr.classList.contains('on'))tg(dr,false);if(sd.classList.contains('on'))tg(sd,false)}
+mn.addEventListener('click',()=>tg(dr,true));$('dx').addEventListener('click',()=>{tg(dr,false);mn.focus()});$('sx').addEventListener('click',ca);db.addEventListener('click',ca);
+dr.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>tg(dr,false)));
+document.querySelectorAll('[data-s]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();ca();tg(sd,true,$('n'))}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')ca()});
+bf();render();
+</script>
+</body>
+</html>
